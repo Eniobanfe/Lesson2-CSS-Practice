@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Anchor</title>
+		<style>
+			.wrapper {
+				width: 100vw;
+				height: 100vh;
+				margin: 0;
+				padding: 0;
+				display: grid;
+				place-items: center;
+			}
+
+			form {
+				padding: 60px;
+				border: 1px solid #000;
+			}
+			label {
+				font-size: 1.45rem;
+			}
+			.label-container {
+				padding: 8px;
+				position: relative;
+			}
+			.info {
+				position: absolute;
+				top: -1px;
+				padding: 2px 8px;
+				border: none;
+				background-color: rgb(11, 219, 226);
+				border-radius: 50%;
+				color: #fff;
+				font-size: 14px;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="/">Home</a>
+		<div class="wrapper">
+			<form>
+				<div class="label-container">
+					<label for="trf">Transformers</label>
+					<button type="button" class="info">i</button>
+				</div>
+				<input id="trf" type="text" />
+			</form>
+		</div>
+	</body>
+</html>

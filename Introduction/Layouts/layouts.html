@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layouts</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        background-color: burlywood;
+        padding: 20px;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+        font-size: 14px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <div class="wrapper">
+      <div class="box">
+        <p>Lorem ipsum dolor</p>
+      </div>
+      <div class="box">
+        <p>Lorem ipsum dolor</p>
+      </div>
+      <div class="box">
+        <p>Lorem ipsum dolor</p>
+      </div>
+      <div class="box">
+        <p>Lorem ipsum dolor</p>
+      </div>
+      <div class="box">
+        <p>Lorem ipsum dolor</p>
+      </div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+    </div>
+  </body>
+</html>

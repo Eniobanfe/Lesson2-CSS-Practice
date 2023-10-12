@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FlexBox Practice</title>
+		<style>
+			html * {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.wrapper {
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+				flex-wrap: wrap;
+				gap: 4px;
+				width: 100vw;
+				height: 100vh;
+				background-color: rgba(127, 255, 212, 0.5);
+			}
+			.box {
+				width: 150px;
+				height: 150px;
+				background-color: burlywood;
+				margin-bottom: 10px;
+				font-size: 1.75rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.box1 {
+				/* flex: 2 0 150px; */
+				height: auto;
+				order: 6;
+				align-self: stretch;
+			}
+			.box2 {
+				order: 4;
+			}
+			.box3 {
+				order: 3;
+			}
+			.box4 {
+				order: 2;
+			}
+			.box5 {
+				order: 5;
+			}
+			.box6 {
+				order: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="box box1">1</div>
+			<div class="box box2">2</div>
+			<div class="box box3">3</div>
+			<div class="box box4">4</div>
+			<div class="box box5">5</div>
+			<div class="box box6">6</div>
+		</div>
+	</body>
+</html>
