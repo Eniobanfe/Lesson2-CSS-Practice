@@ -41,14 +41,14 @@ h2 {
 }
 
 p {
-	margin: 20px;
+	margin: 30px;
 	border: 1px;
 	color: white;
 	padding: 2px;
 	background-color: rgb(78, 12, 12);	
 }
 
-p:nth-child(odd) {
+p:nth-child(3) {
 background-color: brown;
 opacity: 0.5;
 }
@@ -57,31 +57,30 @@ opacity: 0.5;
 	background-color: brown;
 	opacity: 0.5;
 }
-form {
-	margin: 20px;
-	color: brown;
-}
 
-
-a:hover {
-	background-color: burlywood;
-}
-
-input{
-	color: brown;
-	outline-color: brown;
-	border-radius: 0 50px;
-}
 a {
 	display: inline-block;
 	padding: 10px;
-	border: 1px solid-white
+	border: 1px solid-white;
 	border-radius: 0 50px;
 	margin: 20px; 
 	color: brown;
 	text-decoration: none;
 }
 
+a:hover {
+	background-color: burlywood;
+}
+
+form {
+	margin: 20px;
+	color: brown;
+}
+input{
+	color: brown;
+	outline-color: brown;
+	border-radius: 0 50px;
+}
 button:hover {
 	background-color: brown;
 	color: white;
