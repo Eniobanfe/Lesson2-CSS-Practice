@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Assignment</title>
+    <style>
+        * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        }
+
+        .Wrapper{
+            background-color: yellow;
+        }
+
+        header{
+    display: flex;
+    flex-direction: column;
+        }
+
+.header-bar{
+    height: 64px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-bar .logo {
+    width: 150px;
+    height: 34px;
+    background-color: #999;   
+    margin-right: 80px; 
+}
+
+.header-bar .spacer{
+    width: 600px;
+    height: 34px;
+    background-color: #999;   
+    margin-right: 20px; 
+}
+
+.header-bar .btn{
+    width: 100px;
+    height: 34px;
+    background-color: #999;   
+    margin-right: 20px; 
+}
+
+.banner{
+    height: 250px;
+    width: 1200px;
+    background-color: #bbb;
+    margin-bottom: 50px;
+}
+
+content{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color:blueviolet;
+}
+
+.box{
+    width: 100px;
+    height: 120px;
+    flex-grow: 1;
+    margin: 10px;
+    flex-direction: column;
+    background-color: #bbb;
+}
+
+footer{
+    height: 64px;   
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.widget{
+    width: 33%;
+    height: 40px;
+    background-color: #999;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+        <div class="header-bar">
+            <div class="logo">1</div>
+            <div class="spacer">2</div>
+            <div class="btn">3</div>
+         </div>
+        <div class="banner">4</div>
+        <content>
+            <div class="box">one</div>
+            <div class="box">two</div>
+            <div class="box">three</div>
+            <div class="box">four</div>
+            <div class="box">five</div>
+            <div class="box">six</div>
+        </content>
+
+        <footer>
+    <div class="widget">footer 1</div>
+    <div class="widget">footer 2</div>
+        </footer>
+    
+        </header>
+    </div>
+</body>
+</html>
