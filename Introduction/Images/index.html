@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Images Assignment</title>
+		<!--
+			1. Build a card image gallery for a real estate consultant that includes a) an image b) A description c) Price for each property.
+
+			In a separate section beneath the row of card images, build a row thumbnails of each card.
+
+			- Card size >= 250px
+			- maximum width of images > 100% of their container 
+			-padding around the description
+			- Display the price as text on the image and position appropiately.
+			- Add Box shadow to the card
+			- Add a hover state that increase the with of the card a maximum 10% of the Card Size
+			- Compress all images to the same width
+		-->
+		<style>
+			html * {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.wrappr{width: 100vw;
+				height: 100vh;
+				align-items: center;
+				background-color: burlywood;
+				display: flex;
+				flex-direction: row;
+				position: absolute;
+			}
+			.card {
+				margin: 10px auto;
+				width: 350px;
+				box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3),
+					0 10px 10px rgba(0, 0, 0, 0.2);
+				transition-duration: 0.5s;
+			}
+			.card > img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+			span{ 
+				position: relative;
+				left: right;
+				background-color: aqua;
+				border-radius: 100px;
+			}
+			.card > p {
+				font-family: sans-serif;
+				padding: 8px 0;
+				text-align: center;
+			}
+			.card:hover {
+				width: 375px;
+			}
+
+			.card {
+				margin: 40px auto;
+				width: 350px;
+				box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3),
+					0 10px 10px rgba(0, 0, 0, 0.2);
+				transition-duration: 0.5s;
+			}
+			.card > img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+			
+			.card > p {
+				font-family: sans-serif;
+				padding: 8px 0;
+				text-align: center;
+			}
+			.card:hover {
+				width: 375px;
+			}
+			.card {
+				margin: 40px auto;
+				width: 350px;
+				box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3),
+					0 10px 10px rgba(0, 0, 0, 0.2);
+				transition-duration: 0.5s;
+			}
+			.card > img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+			.card > p {
+				font-family: sans-serif;
+				padding: 8px 0;
+				text-align: center;
+			}
+			.card:hover {
+				width: 375px;
+			}
+
+			.card {
+				margin: 40px auto;
+				width: 350px;
+				box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3),
+					0 10px 10px rgba(0, 0, 0, 0.2);
+				transition-duration: 0.5s;
+			}
+			.card > img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+			.card > p {
+				font-family: sans-serif;
+				padding: 8px 0;
+				text-align: center;
+			}
+			.card:hover {
+				width: 375px;
+			}
+			.card {
+				margin: 40px auto;
+				width: 350px;
+				box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3),
+					0 10px 10px rgba(0, 0, 0, 0.2);
+				transition-duration: 0.5s;
+			}
+			.card > img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+			.card > p {
+				font-family: sans-serif;
+				padding: 8px 0;
+				text-align: center;
+			}
+			.card:hover {
+				width: 375px;
+			}
+
+			.card {
+				margin: 40px auto;
+				width: 350px;
+				box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3),
+					0 10px 10px rgba(0, 0, 0, 0.2);
+				transition-duration: 0.5s;
+			}
+			.card > img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+			.card > p {
+				font-family: sans-serif;
+				padding: 8px 0;
+				text-align: center;
+			}
+			.card:hover {
+				width: 375px;
+			}
+
+			footer{
+    
+
+}
+.container .widget{ 
+	/*display: block;
+	width: 33%;
+    height: 30px;
+	gap: 50px;
+	margin: 50px;*/
+	display: block;
+	padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+	
+}
+.widget  img { display: flex;
+	flex-direction: colum;
+	          width: 100px;
+			padding: 5px;
+			gap: 20px;
+			margin: 50px;
+			border: 2px solid;
+			border-radius: 0 50px;
+			}
+
+	
+
+		</style>
+	</head>
+	<body>
+		<div class="Wrapper">
+		<div class="card" one>
+			<span>Price:65millin Naira</span>
+			<img
+				src="images/webaliser-_TPTXZd9mOo-unsplash-comp.jpg"
+				alt="A mansion with swimming pool"
+			/>
+			
+			<p>
+				3 bedroom mansion all rooms en-suite, with two bedroom boys quarters and
+				swimming pool located at Lekki, Lagos.
+			</p>
+		</div>
+
+		<div class="card" two>
+			<span>Price:75millin Naira</span>
+			<img
+				src="images/john-fornander-tVzyDSV84w8-unsplash-comp2.jpg"
+				alt="A mansion with swimming pool"
+			/>
+			<p>
+				4 bedroom mansion, all rooms en-suite, with two bedroom boys quarters and
+				frontal swimming pool located at Lekki, Lagos.
+			</p>
+		</div> 
+		<div class="card" three>
+			<span>Price:70millin Naira</span>
+			<img
+				src="images/avi-werde-hHz4yrvxwlA-unsplash-comp3.jpg"
+				alt="A mansion with swimming pool"
+			/>
+			<p>
+				3 bedroom mansion all rooms en-suite, with two bedroom boys quarters and frontal
+				swimming pool located at Lekki, Lagos.
+			</p>
+		</div>
+
+		<div class="card" four>
+			<span>Price:85millin Naira</span>
+			<img
+				src="images/alejandra-cifre-gonzalez-ylyn5r4vxcA-unsplash-comp4.jpg"
+				alt="A mansion with swimming pool"
+			/>
+			<p>
+				6 bedroom mansion, all rooms en-suite, two bedroom boys quarters and warm
+				swimming pool located at Lekki Peninsula, Lagos.
+			</p>
+		</div>
+		<div class="card" five>
+			<span>Price:75millin Naira</span>
+			<img
+				src="images/digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash-comp5.jpg"
+				alt="A mansion with swimming pool"
+			/>
+			<p>
+				4 bedroom mansion all rooms en-suite, with two bedroom boys quarters and
+				swimming pool located at Lekki, Lagos.
+			</p>
+		</div>
+
+		<div class="card" six>
+			<span>Price:70millin Naira</span>
+			<img
+				src="images/john-fornander-Id7u0EkTjBE-unsplas-comp6.jpg"
+				alt="A mansion with swimming pool"
+			/>
+			<p>
+				4 bedroom mansion all rooms en-suite, with two bedroom boys quarters and
+				swimming pool located at Awoyaya, Lagos.
+			</p>
+		</div>
+		<div class="container">
+		
+				<div class="widget" one>
+					<img
+					src="images/webaliser-_TPTXZd9mOo-unsplash-comp.jpg"
+					alt="A mansion with swimming pool"
+				/>
+				</div>
+				<div class="widget" two>
+					<img
+					src="images/john-fornander-tVzyDSV84w8-unsplash-comp2.jpg"
+					alt="A mansion with swimming pool"
+				/>
+				</div>
+				<div class="widget" three>
+					<img
+					src="images/avi-werde-hHz4yrvxwlA-unsplash-comp3.jpg"
+					alt="A mansion with swimming pool"
+				/>
+	
+				</div>
+				<div class="widget" four> 
+					<img
+					src="images/alejandra-cifre-gonzalez-ylyn5r4vxcA-unsplash-comp4.jpg"
+					alt="A mansion with swimming pool"
+				/>
+	
+				</div>
+				<div class="widget" five> 
+					<img
+					src="images/digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash-comp5.jpg"
+					alt="A mansion with swimming pool"
+				/>
+				</div>
+				<div class="widget" six> <img
+					src="images/john-fornander-Id7u0EkTjBE-unsplas-comp6.jpg"
+					alt="A mansion with swimming pool"
+				/></div>
+				
+				</div>
+		
+		</div>
+		
+	</body>
+</html>
