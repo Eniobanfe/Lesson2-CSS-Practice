@@ -23,19 +23,33 @@
 				padding: 0;
 				box-sizing: border-box;
 			}
-			.wrappr{width: 100vw;
-				height: 100vh;
-				align-items: center;
-				background-color: burlywood;
-				display: flex;
-				flex-direction: row;
+			.wrapper{
+				width: 100%;
+				height: 50%;
+				top: 50%;
+				left:50%;
 				position: absolute;
+				transform: translate(-50%, -50%);
+			}
+
+			.box{
+				display: flex;
+				flex-wrap: wrap;
+				gap: 30px;
+				padding: 20px;
+				margin-bottom: 10px;
+				justify-content: center;
+				align-items: center;
+				transition-duration: 0.5s;
 			}
 			.card {
-				margin: 10px auto;
-				width: 350px;
-				box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3),
-					0 10px 10px rgba(0, 0, 0, 0.2);
+				display: flex;
+				flex-wrap: wrap;
+				gap: 30px;
+				padding: 20px;
+				margin-bottom: 10px;
+				justify-content: center;
+				align-items: center;
 				transition-duration: 0.5s;
 			}
 			.card > img {
@@ -166,18 +180,28 @@
     
 
 }
-.container .widget{ 
+.container { 
 	/*display: block;
 	width: 33%;
     height: 30px;
 	gap: 50px;
-	margin: 50px;*/
+	margin: 50px;
+	max-width: fit-content;
 	display: block;
+	margin: 0 auto;
 	padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 10px;
+    gap: 5px;*/
+	            display: flex;
+				flex-wrap: wrap;
+				gap: 30px;
+				padding: 20px;
+				margin-bottom: 10px;
+				justify-content: center;
+				align-items: center;
+
 	
 }
 .widget  img { display: flex;
@@ -196,76 +220,79 @@
 	</head>
 	<body>
 		<div class="Wrapper">
-		<div class="card" one>
-			<span>Price:65millin Naira</span>
-			<img
-				src="images/webaliser-_TPTXZd9mOo-unsplash-comp.jpg"
-				alt="A mansion with swimming pool"
-			/>
-			
-			<p>
-				3 bedroom mansion all rooms en-suite, with two bedroom boys quarters and
-				swimming pool located at Lekki, Lagos.
-			</p>
-		</div>
-
-		<div class="card" two>
-			<span>Price:75millin Naira</span>
-			<img
-				src="images/john-fornander-tVzyDSV84w8-unsplash-comp2.jpg"
-				alt="A mansion with swimming pool"
-			/>
-			<p>
-				4 bedroom mansion, all rooms en-suite, with two bedroom boys quarters and
-				frontal swimming pool located at Lekki, Lagos.
-			</p>
-		</div> 
-		<div class="card" three>
-			<span>Price:70millin Naira</span>
-			<img
-				src="images/avi-werde-hHz4yrvxwlA-unsplash-comp3.jpg"
-				alt="A mansion with swimming pool"
-			/>
-			<p>
-				3 bedroom mansion all rooms en-suite, with two bedroom boys quarters and frontal
-				swimming pool located at Lekki, Lagos.
-			</p>
-		</div>
-
-		<div class="card" four>
-			<span>Price:85millin Naira</span>
-			<img
-				src="images/alejandra-cifre-gonzalez-ylyn5r4vxcA-unsplash-comp4.jpg"
-				alt="A mansion with swimming pool"
-			/>
-			<p>
-				6 bedroom mansion, all rooms en-suite, two bedroom boys quarters and warm
-				swimming pool located at Lekki Peninsula, Lagos.
-			</p>
-		</div>
-		<div class="card" five>
-			<span>Price:75millin Naira</span>
-			<img
-				src="images/digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash-comp5.jpg"
-				alt="A mansion with swimming pool"
-			/>
-			<p>
-				4 bedroom mansion all rooms en-suite, with two bedroom boys quarters and
-				swimming pool located at Lekki, Lagos.
-			</p>
-		</div>
-
-		<div class="card" six>
-			<span>Price:70millin Naira</span>
-			<img
-				src="images/john-fornander-Id7u0EkTjBE-unsplas-comp6.jpg"
-				alt="A mansion with swimming pool"
-			/>
-			<p>
-				4 bedroom mansion all rooms en-suite, with two bedroom boys quarters and
-				swimming pool located at Awoyaya, Lagos.
-			</p>
-		</div>
+			<div class="box">
+				<div class="card" one>
+					<span>Price:95millin Naira</span>
+					<img
+						src="images/webaliser-_TPTXZd9mOo-unsplash-comp.jpg"
+						alt="A mansion with swimming pool"
+					/>
+					
+					<p>
+						3 bedroom mansion all rooms en-suite, with two bedroom boys quarters and
+						swimming pool located at Lekki, Lagos.
+					</p>
+				</div>
+		
+				<div class="card" two>
+					<span>Price:110millin Naira</span>
+					<img
+						src="images/john-fornander-tVzyDSV84w8-unsplash-comp2.jpg"
+						alt="A mansion with swimming pool"
+					/>
+					<p>
+						4 bedroom mansion, all rooms en-suite, with two bedroom boys quarters and
+						frontal swimming pool located at Lekki, Lagos.
+					</p>
+				</div> 
+				<div class="card" three>
+					<span>Price:90millin Naira</span>
+					<img
+						src="images/avi-werde-hHz4yrvxwlA-unsplash-comp3.jpg"
+						alt="A mansion with swimming pool"
+					/>
+					<p>
+						3 bedroom mansion all rooms en-suite, with two bedroom boys quarters and frontal
+						swimming pool located at Lekki, Lagos.
+					</p>
+				</div>
+		
+				<div class="card" four>
+					<span>Price:95millin Naira</span>
+					<img
+						src="images/alejandra-cifre-gonzalez-ylyn5r4vxcA-unsplash-comp4.jpg"
+						alt="A mansion with swimming pool"
+					/>
+					<p>
+						6 bedroom mansion, all rooms en-suite, two bedroom boys quarters and warm
+						swimming pool located at Lekki Peninsula, Lagos.
+					</p>
+				</div>
+				<div class="card" five>
+					<span>Price:90millin Naira</span>
+					<img
+						src="images/digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash-comp5.jpg"
+						alt="A mansion with swimming pool"
+					/>
+					<p>
+						4 bedroom mansion all rooms en-suite, with two bedroom boys quarters and
+						swimming pool located at Lekki, Lagos.
+					</p>
+				</div>
+		
+				<div class="card" six>
+					<span>Price:90millin Naira</span>
+					<img
+						src="images/john-fornander-Id7u0EkTjBE-unsplas-comp6.jpg"
+						alt="A mansion with swimming pool"
+					/>
+					<p>
+						4 bedroom mansion all rooms en-suite, with two bedroom boys quarters and
+						swimming pool located at Awoyaya, Lagos.
+					</p>
+				</div>
+			</div>
+		
 		<div class="container">
 		
 				<div class="widget" one>
