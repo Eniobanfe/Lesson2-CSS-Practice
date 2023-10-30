@@ -859,22 +859,8 @@ showRange(8); high
 showRange(9); high
 */
 
-/*
-First attempt - came out wrong
-let number ="";
-function showRange(number) {
-	switch (number) {
-		case "1, or 2, or 3":
-			return ("low");
-			break;
-		case "4, or 5, or 6":
-			return("Mid");
-			break;
-		case "7, or 8, or 9":
-			return("High");
-			 break;
-	}
-}
+
+
 console.log(showRange(1));
 console.log(showRange(2));
 console.log(showRange(3));
@@ -883,7 +869,7 @@ console.log(showRange(5));
 console.log(showRange(6));
 console.log(showRange(7));
 console.log(showRange(8));
-console.log(showRange(9));*/
+console.log(showRange(9));
 
 
 function showRange(num) {
