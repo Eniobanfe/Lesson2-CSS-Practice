@@ -1,0 +1,47 @@
+html * {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	padding: 10px 0;
+}
+
+ol,
+ul {
+	padding: 20px;
+	font-style: italic;
+	font-size: 0.75rem;
+}
+header {
+	padding: 20px;
+}
+nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-height: auto;
+}
+section {
+	margin: 10px;
+	padding: 20px;
+	border: 1px solid #ddd;
+}
+code {
+	display: block;
+	padding: 10px;
+	margin: 4px 0;
+	font-weight: bold;
+	background-color: #f3f3f3;
+	color: #333333;
+}
